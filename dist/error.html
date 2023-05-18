@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <!-- partial:../partials/head.html -->
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="icon" href="../../images//favicon.png" />
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap style -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"
+  />
+
+  <!-- Template style -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Flatpickr style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+  <!-- CSRF TOKEN -->
+  <meta name="csrf-token" content="KtogTt4f09AQWcBGuXLkK2Shj07zqUoakJe0iztT" />
+
+  <!-- context -->
+  <script>
+    var context = {
+      showMessageOnLoad: 'HELLO',
+      environment: 'development',
+    };
+  </script>
+</head>
+
+  <!-- partial -->
+
+  <body>
+    <!-- main container -->
+    <div class="layout">
+      <!-- main page -->
+      <main class="layout__main">
+        <div class="layout__main-page-content">
+          <div class="thank-you">
+            <h3 class="thank-you__message-error">Ooops, 401 error!</h3>
+            <p>
+              What you’re looking for may have been misplaced. <br />
+              No worries, though; we are working on it.
+            </p>
+            <p>Please come back later.</p>
+            <a href="/" class="btn btn--primary">Take me back to Directory</a>
+          </div>
+        </div>
+      </main>
+
+      <!-- global footer -->
+      <!-- partial:../partials/footer.html -->
+      <footer class="footer">
+  <div class="footer__copyright">© 2022 Onassis Foundation</div>
+  <div class="footer__links">
+    <a href="" class="footer__links-item">Terms of Use</a>
+    <a href="" class="footer__links-item">Privacy Policy</a>
+  </div>
+</footer>
+
+      <!-- partial -->
+    </div>
+
+    <!-- FOOTER SCRIPTS -->
+    <!-- partial:../partials/footer-scripts.html -->
+    <!-- Bootstrap Script -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+  crossorigin="anonymous"
+></script>
+
+<!-- partial:../partials/global-modals.html -->
+<!-- Request Corrections Modal -->
+<div class="modal fade" id="correctionsModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="correctionsModalLabel">REQUEST CORRECTIONS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>
+            You are requesting corrections from the Scholarship submitter. Fill in the requirements and he/she will be notified via email.
+          </p>
+        </div>
+        <div class="textarea">
+          <label for="message-text" class="col-form-label"></label>
+          <textarea class="form-control" id="message-text" placeholder="Leave your comment here..."></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-modal">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Withdraw Corrections Modal -->
+<div class="modal fade" id="withdrawModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="withdrawModalLabel">WITHDRAW CORRECTIONS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Are you sure you want to withdraw corrections for Thomas Foskolos?</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-modal">Yes, withdraw corrections</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add comment modal -->
+<form action="">
+  <div class="modal js-leave-comment">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__header">
+          <div class="modal__header-title">
+            <span class="text-uppercase">Leave a comment</span>
+          </div>
+          <div class="modal__header-close">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 8L13 13M13 13L18 18M13 13L18 8M13 13L8 18"
+                stroke="#0C0C0C"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="modal__body">
+          <div class="bg-white d-flex my-10">
+            <textarea
+              class="create-eval-modal__critirio-textarea create-eval-modal__critirio-textarea--tall"
+              name=""
+              placeholder="Type your comment here..."
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="modal__footer">
+          <button class="btn btn--primary change-date-modal__btn" type="submit" value="Submit">Ready!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<!-- Delete comment modal -->
+<form action="">
+  <div class="modal js-delete-comment">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__header">
+          <div class="modal__header-title">
+            <span class="text-uppercase">DELETE COMMENT</span>
+          </div>
+          <div class="modal__header-close">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 8L13 13M13 13L18 18M13 13L18 8M13 13L8 18"
+                stroke="#0C0C0C"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="modal__body">
+          <input class="js-comment-id" type="hidden" name="comment-id" value="" />
+          <div class="d-flex my-30 px-16 font-weight-500 font-size-16">
+            <div class="">Are you sure you want to delete this comment?</div>
+          </div>
+        </div>
+
+        <div class="modal__footer">
+          <button class="btn btn--danger-fill change-date-modal__btn" type="submit" value="Submit">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<!-- Withdraw application modal -->
+<div class="modal fade" id="withdrawApplicationModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="withdrawApplicationModalLabel">ΑΚΥΡΩΣΗ ΑΙΤΗΣΗΣ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να αποσύρετε την αίτηση;</p>
+        </div>
+        <textarea
+          class="form__element-input"
+          placeholder="Λόγος απόσυρσης (προαιρετικό)"
+          id="floatingTextarea2"
+          style="height: 100px"
+        ></textarea>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Απόσυρση</button>
+          <button type="button" class="btn btn--secondary">Ακύρωση</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Delete draft modal -->
+<div class="modal fade" id="deleteDraftModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να διαγράψετε το πρόχειρο;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Διαγραφή</button>
+          <button type="button" class="btn btn--secondary">Ακύρωση</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Start Evaluation Round modal -->
+<div class="modal fade" id="evaluationRoundModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να ξεκινήσετε ένα Evaluation Round;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Move to Shortlist modal -->
+<div class="modal fade" id="moveToShortlistModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να κάνετε Shortlist τους επιλεγμένους υποψήφιους;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quickview modal -->
+<div class="modal fade" id="quickViewModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="withdrawApplicationModalLabel">Key Application Data</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Remove Applicants Modal -->
+<div class="modal fade" id="removeApplicantsModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να αφαιρέσετε τους επιλεγμένους υποψήφιους;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Start Evaluation Round Modal -->
+<div class="modal fade" id="startEvaluationModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να ξεκινήσετε ένα νέο Evaluation Round;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Evaluators Modal -->
+<!-- <div class="modal fade" id="addEvaluatorsModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3 class=" evaluators-modal-container__applicant-name">Applicant Name</h3>
+        <div class="modal-description">
+          <div class="evaluators-modal-container">
+            <div class="evaluators-modal-container__column">
+              <p class="evaluators-modal-container__description">Field of Study 1</p>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+
+            </div>
+            <div class="evaluators-modal-container__column">
+              <p class="evaluators-modal-container__description">Field of Study 2</p>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY2_ID_EPIPEDO_SOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY2_ID][EPIPEDO_SOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY2_ID_EPIPEDO_SOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY2_ID][EPIPEDO_SOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR2_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR2_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR2_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR2_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN2_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN2_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN2_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN2_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Assign</button>
+          <button type="button" class="btn btn--secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Move to Financial Planning Modal -->
+<div class="modal fade" id="financialPlanningModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να προχωρήσετε σε Financial Planning τους επιλεγμένους υποψήφιους;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Exclude from Modal -->
+<div class="modal fade" id="excludeFromEvaluationModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να μην αξιολογήσετε την συγκεκριμένη αίτηση;</p>
+          <p>Παρακαλώ αναφέρετε τον λόγο</p>
+          <textarea class="form__element-input" placeholder="" id="floatingTextarea2"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Close Round Modal -->
+<div class="modal fade" id="closeEvaluationModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να κλείσετε τον Γύρο Αξιολόγησης;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Present to BOD Modal -->
+<div class="modal fade" id="presentBodModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να παρουσιάσετε στο B.O.D τους επιλεγμένους υποψήφιους;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Save Financial Plan Modal -->
+<div class="modal fade" id="financialPlanModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να αποθηκεύσετε το Οικονομικό Πλάνο;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Clear Inputs Modal -->
+<div class="modal fade" id="clearInputsModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να κάνετε reset τα πεδιά Budget;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" data-bs-dismiss="modal" class="btn btn--primary clear-inputs-btn">Ναι</button>
+          <button type="button" data-bs-dismiss="modal" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- File View Modal -->
+<div class="modal fade" id="fileModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- <embed src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png#toolbar=0"> -->
+        <!-- <embed src="https://www.churchmotiongraphics.com/wp-content/uploads/2014/03/test-1.jpg#toolbar=0" /> -->
+        <!-- <embed src="https://www.orimi.com/pdf-test.pdf#toolbar=0"> -->
+        <div class="embed-wrapper">
+          <div class="blocker"></div>
+          <embed src="" type="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOGGLERS -->
+<!-- <div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#correctionsModal">correctionsModal</div>
+<div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#withdrawModal">withdrawModal</div>
+<div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#withdrawApplicationModal">withdrawApplicationModal</div>
+<div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#deleteDraftModal">deleteDraftModal</div>
+<div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#evaluationRoundModal">evaluationRoundModal</div>
+<div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#moveToShortlistModal">moveToShortlistModal</div> -->
+
+<!-- partial -->
+
+<!-- Template Script -->
+<script src="js/app.js"></script>
+
+<script>
+  //Tooltips
+  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  const tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+</script>
+
+    <!-- partial -->
+  </body>
+</html>

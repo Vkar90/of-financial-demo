@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD -->
+<!-- partial:../partials/head.html -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="icon" href="../../images//favicon.png" />
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap style -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"
+  />
+
+  <!-- Template style -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Flatpickr style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+  <!-- CSRF TOKEN -->
+  <meta name="csrf-token" content="KtogTt4f09AQWcBGuXLkK2Shj07zqUoakJe0iztT" />
+
+  <!-- context -->
+  <script>
+    var context = {
+      showMessageOnLoad: 'HELLO',
+      environment: 'development',
+    };
+  </script>
+</head>
+
+<!-- partial -->
+
+<body>
+  <!-- main container -->
+  <div class="layout">
+    <!-- global header -->
+    <!-- partial:../partials/header.html -->
+    <header class="header">
+  <div class="header__left">
+    <!-- dashboard link icon -->
+    <a href="/dashboard.html">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__home-icon">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M4 14.7369C4 9.57517 4.56283 9.93542 7.59242 7.12583C8.91792 6.05883 10.9804 4 12.7615 4C14.5417 4 16.6454 6.04875 17.9828 7.12583C21.0124 9.93542 21.5743 9.57517 21.5743 14.7369C21.5743 22.3333 19.7786 22.3333 12.7872 22.3333C5.79575 22.3333 4 22.3333 4 14.7369Z"
+          stroke="#0C0C0C"
+          stroke-width="1.54"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          class="small-line"
+          d="M9.80078 18.1666H15.8008"
+          stroke="#0C0C0C"
+          stroke-width="1.54"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+    <!-- separator -->
+    <div class="header__separator"></div>
+    <!-- page title -->
+    <div class="header__page-title">gap property for Flexbox gap property for Flexbox</div>
+  </div>
+  <div class="header__right">
+    <a href="" class="header__apps">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="16" fill="#F1F1F1" />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M22.9999 11.85C22.9999 13.4278 21.7203 14.7074 20.1425 14.7074C18.5648 14.7074 17.2859 13.4278 17.2859 11.85C17.2859 10.2723 18.5648 8.99268 20.1425 8.99268C21.7203 8.99268 22.9999 10.2723 22.9999 11.85Z"
+          fill="#0C0C0C"
+          stroke="#0C0C0C"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M14.714 11.85C14.714 13.4278 13.4351 14.7074 11.8566 14.7074C10.2796 14.7074 9 13.4278 9 11.85C9 10.2723 10.2796 8.99268 11.8566 8.99268C13.4351 8.99268 14.714 10.2723 14.714 11.85Z"
+          stroke="#0C0C0C"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M22.9999 20.0851C22.9999 21.6629 21.7203 22.9418 20.1425 22.9418C18.5648 22.9418 17.2859 21.6629 17.2859 20.0851C17.2859 18.5074 18.5648 17.2278 20.1425 17.2278C21.7203 17.2278 22.9999 18.5074 22.9999 20.0851Z"
+          stroke="#0C0C0C"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M14.714 20.0851C14.714 21.6629 13.4351 22.9418 11.8566 22.9418C10.2796 22.9418 9 21.6629 9 20.0851C9 18.5074 10.2796 17.2278 11.8566 17.2278C13.4351 17.2278 14.714 18.5074 14.714 20.0851Z"
+          stroke="#0C0C0C"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="16" fill="#F1F1F1" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M14.8029 7.14176C11.967 8.07566 11.0847 11.7156 13.1832 13.8238C14.0067 14.6511 14.7511 14.949 16.0043 14.9526C16.8836 14.9553 17.1753 14.9024 17.6898 14.6479C18.4847 14.2547 19.2416 13.4927 19.6319 12.6924C20.0737 11.7866 20.0768 10.1957 19.6385 9.30054C19.2442 8.49502 18.483 7.73502 17.6931 7.35829C16.9309 6.99464 15.5614 6.89203 14.8029 7.14176ZM11.1883 16.1997C10.7272 16.4086 10.3104 16.8519 10.1334 17.3216C10.0544 17.531 9.99988 18.7432 9.99988 20.2894C9.99988 22.8008 10.011 22.92 10.2848 23.3306C10.643 23.8675 11.5717 24.3756 12.8356 24.7263C13.6696 24.9577 14.1404 24.9976 16.0043 24.9952C17.8534 24.9927 18.3476 24.95 19.1854 24.7202C20.4192 24.3818 21.358 23.8617 21.7338 23.3082C22.016 22.8923 22.0209 22.83 21.984 20.0919C21.9426 17.0269 21.9318 16.9825 21.0851 16.3467C20.7528 16.0973 20.5671 16.0863 16.1517 16.0587C12.5164 16.0358 11.4856 16.0651 11.1883 16.1997Z"
+            fill="#0C0C0C"
+          />
+        </svg>
+      </button>
+      <div class="dropdown-menu my-account" aria-labelledby="dropdownMenuButton2">
+        <div class="my-account__top-account">
+          <p class="my-account__email">v.kardamitsis@reborrn.com</p>
+          <a class="dropdown-item my-account__link" href="http://www.youtube.com">View account</a>
+        </div>
+        <div class="my-account__bottom-account">
+          <a class="dropdown-item my-account__log-out-copy" href="#">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.6397 10.9446C21.0148 10.9446 21.3188 10.6406 21.3188 10.2655C21.3188 9.89042 21.0148 9.58637 20.6397 9.58637V10.9446ZM8.90937 9.58637C8.5343 9.58637 8.23025 9.89042 8.23025 10.2655C8.23025 10.6406 8.5343 10.9446 8.90937 10.9446V9.58637ZM18.2677 6.94351C18.002 6.67884 17.572 6.67973 17.3073 6.94548C17.0426 7.21124 17.0435 7.64123 17.3093 7.9059L18.2677 6.94351ZM20.641 10.2655L21.1202 10.7467C21.2481 10.6192 21.3201 10.4461 21.3201 10.2655C21.3201 10.0849 21.2481 9.91172 21.1202 9.78428L20.641 10.2655ZM17.3093 12.6251C17.0435 12.8897 17.0426 13.3197 17.3073 13.5855C17.572 13.8512 18.002 13.8521 18.2677 13.5874L17.3093 12.6251ZM14.6724 5.95279C14.7068 6.32627 15.0375 6.60113 15.411 6.56671C15.7845 6.53228 16.0593 6.2016 16.0249 5.82812L14.6724 5.95279ZM16.0249 14.4673C16.0593 14.0938 15.7845 13.7632 15.411 13.7287C15.0375 13.6943 14.7068 13.9692 14.6724 14.3426L16.0249 14.4673ZM20.6397 9.58637H8.90937V10.9446H20.6397V9.58637ZM17.3093 7.9059L20.1617 10.7467L21.1202 9.78428L18.2677 6.94351L17.3093 7.9059ZM20.1617 9.78428L17.3093 12.6251L18.2677 13.5874L21.1202 10.7467L20.1617 9.78428ZM16.0249 5.82812C15.8594 4.03204 15.4262 2.5908 14.1699 1.6599C12.9625 0.765208 11.1368 0.457235 8.52925 0.457235V1.81547C11.1143 1.81547 12.5375 2.14073 13.3613 2.75118C14.1362 3.32541 14.5165 4.26122 14.6724 5.95279L16.0249 5.82812ZM8.52925 0.457235C5.07096 0.457235 2.97271 1.00086 1.89751 2.75122C1.38363 3.58778 1.15477 4.62691 1.04334 5.8245C0.931689 7.02455 0.932333 8.46852 0.932333 10.1477H2.29057C2.29057 8.44643 2.29121 7.07375 2.39574 5.95033C2.50049 4.82444 2.70399 4.03329 3.05484 3.46213C3.70909 2.39705 5.06974 1.81547 8.52925 1.81547V0.457235ZM0.932333 10.1477C0.932333 11.8269 0.931689 13.2709 1.04334 14.4709C1.15477 15.6685 1.38363 16.7076 1.89751 17.5442C2.97271 19.2946 5.07096 19.8382 8.52925 19.8382V18.48C5.06974 18.48 3.70909 17.8984 3.05484 16.8333C2.70399 16.2621 2.50049 15.471 2.39574 14.3451C2.29121 13.2217 2.29057 11.849 2.29057 10.1477H0.932333ZM8.52925 19.8382C11.1368 19.8382 12.9625 19.5302 14.1699 18.6355C15.4262 17.7046 15.8594 16.2634 16.0249 14.4673L14.6724 14.3426C14.5165 16.0342 14.1362 16.97 13.3613 17.5443C12.5375 18.1547 11.1143 18.48 8.52925 18.48V19.8382Z"
+                fill="#788591"
+              />
+            </svg>
+            Log out</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- partial -->
+
+    <!-- breadcrumbs -->
+    <!-- partial:../partials/breadcrumbs.html -->
+    <nav aria-label="breadcrumb">
+  <div class="breadcrumb">
+    <div class="breadcrumb__item">
+      <a href="#">Scholarship title</a>
+    </div>
+    <div class="breadcrumb__item"><a href="#">Applicants</a></div>
+    <div class="breadcrumb__item active" aria-current="page">Thomas Foskolos</div>
+  </div>
+</nav>
+
+    <!-- partial -->
+
+    <!-- main page -->
+    <main class="layout__main">
+      <div class="layout__main-page-content">
+        <!-- helper navbar -->
+        <!-- partial:../partials/navbar.html -->
+        <nav class="navbar">
+  <a class="navbar__link active" href="/scholarship-info.html">INFORMATION</a>
+  <a class="navbar__link" href="/applicants-overview.html">APPLICANTS</a>
+  <a class="navbar__link" href="/applicants-overview.html">EVALUATION ROUND</a>
+  <a class="navbar__link" href="/shortlisted-applicants.html">FINANCIAL PLANNING</a>
+</nav>
+
+        <!-- partial -->
+        <div id="applicants-table" class="list-wrapper">
+          <!-- ACTIONS -->
+          <div class="action-bar">
+            <div class="search-container">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2681 19.2677L22.7504 22.75M21.864 13C21.864 17.8957 17.896 21.8636 13.0004 21.8636C8.10467 21.8636 4.13672 17.8957 4.13672 13C4.13672 8.10431 8.10467 4.13635 13.0004 4.13635C17.896 4.13635 21.864 8.10431 21.864 13Z" stroke="#0C0C0C" stroke-width="1.53636" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <input type="text" class="search" placeholder="Αναζήτηση..." />
+            </div>
+            <div class="claim-container">
+              <button class="btn disabled btn--secondary action-bar__claim-button">Claim 0 applications</button>
+            </div>
+          </div>
+          <!-- FILTERS -->
+          <div class="filter-bar">
+            <!-- FILTER -->
+            <div class="form__element">
+              <label for="exampleid" class="form__element-label">Status</label>
+              <div class="form__element-dp-container">
+                <select class="form__element-input tom-select" data-filter-name="status" multiple id="exampleid" autocomplete="off"></select>
+                <svg class="form__element-dp-arrow" width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.445 6.722 8 11.167 3.556 6.722" stroke="#788591" stroke-width=".945" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <!-- FILTER -->
+            <div class="form__element">
+              <label for="exampleid" class="form__element-label">Assigned Owner</label>
+              <div class="form__element-dp-container">
+                <select class="form__element-input tom-select" data-filter-name="assigned-owner" multiple id="exampleid" autocomplete="off"></select>
+                <svg class="form__element-dp-arrow" width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.445 6.722 8 11.167 3.556 6.722" stroke="#788591" stroke-width=".945" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <!-- FILTER -->
+            <div class="form__element">
+              <label for="exampleid" class="form__element-label">hiddenValue2</label>
+              <div class="form__element-dp-container">
+                <select class="form__element-input tom-select" data-filter-name="hiddenvalue2" multiple id="exampleid" autocomplete="off"></select>
+                <svg class="form__element-dp-arrow" width="16" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.445 6.722 8 11.167 3.556 6.722" stroke="#788591" stroke-width=".945" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="entries">Showing 15 entries out of 50</div>
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Select</th>
+                  <th scope="col">Actions</th>
+                  <th scope="col" class="sort" data-sort="name">Name</th>
+                  <th scope="col" class="sort" data-sort="email">Email</th>
+                  <th scope="col" class="sort" data-sort="status">Status</th>
+                  <th scope="col" class="sort" data-sort="submission-date">Submission Date</th>
+                  <th scope="col" class="sort" data-sort="submission-id">Application ID</th>
+                  <th scope="col" class="sort" data-sort="assigned-owner">Assigned Owner</th>
+                </tr>
+              </thead>
+              <tbody class="js-list">
+                <tr data-hiddenValue1="hi" data-hiddenValue2="there">
+                  <td class="">
+                    <!-- FORM ELEMENT -->
+                    <!-- CHECKBOX -->
+                    <div class="form__element">
+                      <label class="form__element-checkbox-container">
+                        <input type="checkbox" class="form__element-checkbox" />
+                        <span class="form__element-checkbox-checkmark">
+                          <svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m1.6 4.327 2.8 2.805 5.77-5.772" stroke="#0E40CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="/applicant-form.html" class="btn btn--primary">Προβολή</a>
+                  </td>
+                  <td class="name">Θωμάς Φώσκολος</td>
+                  <td class="email">thomas@reborrn.com</td>
+                  <td class="status">Submitted</td>
+                  <td class="submission-date">18.11.1997 13:31</td>
+                  <td class="submission-id">1927367</td>
+                  <td class="assigned-owner">Vaggelis Kardamitsis</td>
+                </tr>
+                <tr>
+                  <td class="">
+                    <!-- FORM ELEMENT -->
+                    <!-- CHECKBOX -->
+                    <div class="form__element">
+                      <label class="form__element-checkbox-container">
+                        <input type="checkbox" class="form__element-checkbox" />
+                        <span class="form__element-checkbox-checkmark">
+                          <svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m1.6 4.327 2.8 2.805 5.77-5.772" stroke="#0E40CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="btn btn--primary">Προβολή</a>
+                  </td>
+                  <td class="name">Nikos Ioannidis</td>
+                  <td class="email">nikos@reborrn.com</td>
+                  <td class="status">Draft</td>
+                  <td class="submission-date">20.12.20022 13:31</td>
+                  <td class="submission-id">0007367</td>
+                  <td class="assigned-owner">Thomas Foskolos</td>
+                </tr>
+                <tr>
+                  <td class="">
+                    <!-- FORM ELEMENT -->
+                    <!-- CHECKBOX -->
+                    <div class="form__element">
+                      <label class="form__element-checkbox-container">
+                        <input type="checkbox" class="form__element-checkbox" />
+                        <span class="form__element-checkbox-checkmark">
+                          <svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m1.6 4.327 2.8 2.805 5.77-5.772" stroke="#0E40CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="btn btn--primary">Προβολή</a>
+                  </td>
+                  <td class="name">Sulllivan Ursa2</td>
+                  <td class="email">thomas@reborrn.com</td>
+                  <td class="status">Submitted</td>
+                  <td class="submission-date">18.11.1997 13:31</td>
+                  <td class="submission-id">1927367</td>
+                  <td class="assigned-owner">Vaggelis Kardamitsis</td>
+                </tr>
+                <tr>
+                  <td class="">
+                    <!-- FORM ELEMENT -->
+                    <!-- CHECKBOX -->
+                    <div class="form__element">
+                      <label class="form__element-checkbox-container">
+                        <input type="checkbox" class="form__element-checkbox" />
+                        <span class="form__element-checkbox-checkmark">
+                          <svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m1.6 4.327 2.8 2.805 5.77-5.772" stroke="#0E40CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="btn btn--primary">Προβολή</a>
+                  </td>
+                  <td class="name">Thomas Foskolos</td>
+                  <td class="email">thomas@reborrn.com</td>
+                  <td class="status">Submitted</td>
+                  <td class="submission-date">18.11.1997 13:31</td>
+                  <td class="submission-id">1927367</td>
+                  <td class="assigned-owner">Vaggelis Kardamitsis</td>
+                </tr>
+                <tr>
+                  <td class="">
+                    <!-- FORM ELEMENT -->
+                    <!-- CHECKBOX -->
+                    <div class="form__element">
+                      <label class="form__element-checkbox-container">
+                        <input type="checkbox" class="form__element-checkbox" />
+                        <span class="form__element-checkbox-checkmark">
+                          <svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m1.6 4.327 2.8 2.805 5.77-5.772" stroke="#0E40CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="btn btn--primary">Προβολή</a>
+                  </td>
+                  <td class="name">Nikos Ioannidis</td>
+                  <td class="email">nikos@reborrn.com</td>
+                  <td class="status">Submitted</td>
+                  <td class="submission-date">20.12.20022 13:31</td>
+                  <td class="submission-id">0007367</td>
+                  <td class="assigned-owner">Thomas Foskolos</td>
+                </tr>
+                <tr>
+                  <td class="">
+                    <!-- FORM ELEMENT -->
+                    <!-- CHECKBOX -->
+                    <div class="form__element">
+                      <label class="form__element-checkbox-container">
+                        <input type="checkbox" class="form__element-checkbox" />
+                        <span class="form__element-checkbox-checkmark">
+                          <svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m1.6 4.327 2.8 2.805 5.77-5.772" stroke="#0E40CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="btn btn--primary">Προβολή</a>
+                  </td>
+                  <td class="name">Thomas Foskolos</td>
+                  <td class="email">thomas@reborrn.com</td>
+                  <td class="status">Submitted</td>
+                  <td class="submission-date">18.11.1997 13:31</td>
+                  <td class="submission-id">1927367</td>
+                  <td class="assigned-owner">Vaggelis Kardamitsis</td>
+                </tr>
+                <tr>
+                  <td class="">
+                    <!-- FORM ELEMENT -->
+                    <!-- CHECKBOX -->
+                    <div class="form__element">
+                      <label class="form__element-checkbox-container">
+                        <input type="checkbox" class="form__element-checkbox" />
+                        <span class="form__element-checkbox-checkmark">
+                          <svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m1.6 4.327 2.8 2.805 5.77-5.772" stroke="#0E40CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="btn btn--primary">Προβολή</a>
+                  </td>
+                  <td class="name">Thomas Foskolos</td>
+                  <td class="email">thomas@reborrn.com</td>
+                  <td class="status">Draft</td>
+                  <td class="submission-date">18.11.1997 13:31</td>
+                  <td class="submission-id">1927367</td>
+                  <td class="assigned-owner">Vaggelis Kardamitsis</td>
+                </tr>
+                <tr>
+                  <td class="">
+                    <!-- FORM ELEMENT -->
+                    <!-- CHECKBOX -->
+                    <div class="form__element">
+                      <label class="form__element-checkbox-container">
+                        <input type="checkbox" class="form__element-checkbox" />
+                        <span class="form__element-checkbox-checkmark">
+                          <svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m1.6 4.327 2.8 2.805 5.77-5.772" stroke="#0E40CF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="">
+                    <a href="" class="btn btn--primary">Προβολή</a>
+                  </td>
+                  <td class="name">Thomas Foskolos</td>
+                  <td class="email">thomas@reborrn.com</td>
+                  <td class="status">Submitted</td>
+                  <td class="submission-date">18.11.1997 13:31</td>
+                  <td class="submission-id">1927367</td>
+                  <td class="assigned-owner">Vaggelis Kardamitsis</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- global footer -->
+    <!-- partial:../partials/footer.html -->
+    <footer class="footer">
+  <div class="footer__copyright">© 2022 Onassis Foundation</div>
+  <div class="footer__links">
+    <a href="" class="footer__links-item">Terms of Use</a>
+    <a href="" class="footer__links-item">Privacy Policy</a>
+  </div>
+</footer>
+
+    <!-- partial -->
+  </div>
+
+  <!-- FOOTER SCRIPTS -->
+  <!-- partial:../partials/footer-scripts.html -->
+  <!-- Bootstrap Script -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+  crossorigin="anonymous"
+></script>
+
+<!-- partial:../partials/global-modals.html -->
+<!-- Request Corrections Modal -->
+<div class="modal fade" id="correctionsModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="correctionsModalLabel">REQUEST CORRECTIONS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>
+            You are requesting corrections from the Scholarship submitter. Fill in the requirements and he/she will be notified via email.
+          </p>
+        </div>
+        <div class="textarea">
+          <label for="message-text" class="col-form-label"></label>
+          <textarea class="form-control" id="message-text" placeholder="Leave your comment here..."></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-modal">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Withdraw Corrections Modal -->
+<div class="modal fade" id="withdrawModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="withdrawModalLabel">WITHDRAW CORRECTIONS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Are you sure you want to withdraw corrections for Thomas Foskolos?</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-modal">Yes, withdraw corrections</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add comment modal -->
+<form action="">
+  <div class="modal js-leave-comment">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__header">
+          <div class="modal__header-title">
+            <span class="text-uppercase">Leave a comment</span>
+          </div>
+          <div class="modal__header-close">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 8L13 13M13 13L18 18M13 13L18 8M13 13L8 18"
+                stroke="#0C0C0C"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="modal__body">
+          <div class="bg-white d-flex my-10">
+            <textarea
+              class="create-eval-modal__critirio-textarea create-eval-modal__critirio-textarea--tall"
+              name=""
+              placeholder="Type your comment here..."
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="modal__footer">
+          <button class="btn btn--primary change-date-modal__btn" type="submit" value="Submit">Ready!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<!-- Delete comment modal -->
+<form action="">
+  <div class="modal js-delete-comment">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__header">
+          <div class="modal__header-title">
+            <span class="text-uppercase">DELETE COMMENT</span>
+          </div>
+          <div class="modal__header-close">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 8L13 13M13 13L18 18M13 13L18 8M13 13L8 18"
+                stroke="#0C0C0C"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="modal__body">
+          <input class="js-comment-id" type="hidden" name="comment-id" value="" />
+          <div class="d-flex my-30 px-16 font-weight-500 font-size-16">
+            <div class="">Are you sure you want to delete this comment?</div>
+          </div>
+        </div>
+
+        <div class="modal__footer">
+          <button class="btn btn--danger-fill change-date-modal__btn" type="submit" value="Submit">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<!-- Withdraw application modal -->
+<div class="modal fade" id="withdrawApplicationModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="withdrawApplicationModalLabel">ΑΚΥΡΩΣΗ ΑΙΤΗΣΗΣ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να αποσύρετε την αίτηση;</p>
+        </div>
+        <textarea
+          class="form__element-input"
+          placeholder="Λόγος απόσυρσης (προαιρετικό)"
+          id="floatingTextarea2"
+          style="height: 100px"
+        ></textarea>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Απόσυρση</button>
+          <button type="button" class="btn btn--secondary">Ακύρωση</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Delete draft modal -->
+<div class="modal fade" id="deleteDraftModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να διαγράψετε το πρόχειρο;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Διαγραφή</button>
+          <button type="button" class="btn btn--secondary">Ακύρωση</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Start Evaluation Round modal -->
+<div class="modal fade" id="evaluationRoundModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να ξεκινήσετε ένα Evaluation Round;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Move to Shortlist modal -->
+<div class="modal fade" id="moveToShortlistModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να κάνετε Shortlist τους επιλεγμένους υποψήφιους;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quickview modal -->
+<div class="modal fade" id="quickViewModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="withdrawApplicationModalLabel">Key Application Data</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Remove Applicants Modal -->
+<div class="modal fade" id="removeApplicantsModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να αφαιρέσετε τους επιλεγμένους υποψήφιους;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Start Evaluation Round Modal -->
+<div class="modal fade" id="startEvaluationModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να ξεκινήσετε ένα νέο Evaluation Round;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Evaluators Modal -->
+<!-- <div class="modal fade" id="addEvaluatorsModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3 class=" evaluators-modal-container__applicant-name">Applicant Name</h3>
+        <div class="modal-description">
+          <div class="evaluators-modal-container">
+            <div class="evaluators-modal-container__column">
+              <p class="evaluators-modal-container__description">Field of Study 1</p>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+
+            </div>
+            <div class="evaluators-modal-container__column">
+              <p class="evaluators-modal-container__description">Field of Study 2</p>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY2_ID_EPIPEDO_SOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY2_ID][EPIPEDO_SOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY2_ID_EPIPEDO_SOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY2_ID][EPIPEDO_SOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR2_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR2_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR2_ID_FIELD_OF_STUDY_ID_EPIPEDO_SpOUDWN_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR2_ID][FIELD_OF_STUDY_ID][EPIPEDO_SpOUDWN_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+              <label for="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN2_ID" class="evaluators-modal-container__evaluator-wrapper">
+                <input class="hidden" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN2_ID]" value="0" />
+                <input class="hidden" id="evaluation_round_submission_SUBMISSION_ID_EVALUATOR_ID_FIELD_OF_STUDY_ID_EPIPEDO_SPOUDWN2_ID" type="checkbox" name="evaluation_round_submission[SUBMISSION_ID][EVALUATOR_ID][FIELD_OF_STUDY_ID][EPIPEDO_SPOUDWN2_ID]" value="1" />
+                <div class="evaluators-modal-container__evaluator">
+                  <h4 class="evaluators-modal-container__evaluator-name">Nikos Ioannidis</h4>
+                  <p class="evaluators-modal-container__evaluator-email">nikos.ioannidis@reborrn.com</p>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Assign</button>
+          <button type="button" class="btn btn--secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Move to Financial Planning Modal -->
+<div class="modal fade" id="financialPlanningModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να προχωρήσετε σε Financial Planning τους επιλεγμένους υποψήφιους;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Exclude from Modal -->
+<div class="modal fade" id="excludeFromEvaluationModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να μην αξιολογήσετε την συγκεκριμένη αίτηση;</p>
+          <p>Παρακαλώ αναφέρετε τον λόγο</p>
+          <textarea class="form__element-input" placeholder="" id="floatingTextarea2"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Close Round Modal -->
+<div class="modal fade" id="closeEvaluationModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να κλείσετε τον Γύρο Αξιολόγησης;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Present to BOD Modal -->
+<div class="modal fade" id="presentBodModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να παρουσιάσετε στο B.O.D τους επιλεγμένους υποψήφιους;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Save Financial Plan Modal -->
+<div class="modal fade" id="financialPlanModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να αποθηκεύσετε το Οικονομικό Πλάνο;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" class="btn btn--primary">Ναι</button>
+          <button type="button" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Clear Inputs Modal -->
+<div class="modal fade" id="clearInputsModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-description">
+          <p>Είστε σίγουροι ότι θέλετε να κάνετε reset τα πεδιά Budget;</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+          <button type="button" data-bs-dismiss="modal" class="btn btn--primary clear-inputs-btn">Ναι</button>
+          <button type="button" data-bs-dismiss="modal" class="btn btn--secondary">Όχι</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- File View Modal -->
+<div class="modal fade" id="fileModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- <embed src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png#toolbar=0"> -->
+        <!-- <embed src="https://www.churchmotiongraphics.com/wp-content/uploads/2014/03/test-1.jpg#toolbar=0" /> -->
+        <!-- <embed src="https://www.orimi.com/pdf-test.pdf#toolbar=0"> -->
+        <div class="embed-wrapper">
+          <div class="blocker"></div>
+          <embed src="" type="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOGGLERS -->
+<!-- <div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#correctionsModal">correctionsModal</div>
+<div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#withdrawModal">withdrawModal</div>
+<div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#withdrawApplicationModal">withdrawApplicationModal</div>
+<div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#deleteDraftModal">deleteDraftModal</div>
+<div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#evaluationRoundModal">evaluationRoundModal</div>
+<div class="btn btn--secondary" data-bs-toggle="modal" data-bs-target="#moveToShortlistModal">moveToShortlistModal</div> -->
+
+<!-- partial -->
+
+<!-- Template Script -->
+<script src="js/app.js"></script>
+
+<script>
+  //Tooltips
+  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  const tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+</script>
+
+  <!-- partial -->
+</body>
+
+</html>
