@@ -1,9 +1,0 @@
-html:root {
-  --space-60: 6rem;
-}
-
-@include when-less('md') {
-  html:root {
-    --space-60: 3rem;
-  }
-}
