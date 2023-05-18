@@ -1,0 +1,146 @@
+Evaluation Round:
+  Create evaluation round:
+    ✔ on modal of assign evaluators, the items should have border transparent on normal state @done(23-02-09 11:12)
+    ✔ the calculation of the action buttons should only be calculated from the select checkbox of the start of the row @done(23-02-09 11:14)
+    ☐ auto calculate the number of evaluators assigned from the selected evalutors of the modal
+    ✔ add a clear selection button after single checkbox click on table @done(23-02-14 17:07)
+
+
+Pages:
+  Submitter:
+    ✔ dashboard @done(22-10-17 16:44)
+    ✔ new submission @done(22-10-17 17:08)
+    ✔ submitted application (with toast success) @done(22-10-17 17:09) (same as edit-form.html)
+    ✔ withdraw modal (with toast success withdraw) @done(22-10-17 17:16)
+    ✔ draft submission (same as edit-form.html) @done(22-10-17 17:17)
+    ✔ delete draft modal @done(22-10-17 17:17)
+    ✔ request correction with disabled form @done(22-10-17 17:19) (disabled-form.html)
+
+  Teacher:
+    ✔ submit recommendation letter @done(23-02-09 11:15)
+    ✔ thank you message (maybe use generic layout for success and error) @done(22-10-17 17:24)
+
+  Associate:
+    ✔ dashboard @done(22-10-19 13:23) same as submitter
+    ✔ create scholarship @done(22-10-19 13:26)
+    ✔ scholarship: info and "edit info" @done(22-10-19 13:29)
+    ✔ scholarship: table with submissions @done(22-10-21 15:10)
+    ✔ submission: disabled form with request correction modal @done(22-10-21 15:39)
+    ✔ submission: disabled form with cancel request correction with verify modal @done(22-10-21 15:44)
+    ✔ submission: form with edit view @done(22-10-21 15:40)
+    ✔ submission: old revision @done(22-10-21 15:40)
+    ✔ submission: withdrawn with reinstate modal @done(23-02-09 11:14)
+    ✔ submission: eligibility check @done(23-02-09 11:14)
+    ✔ submission: comments (3 different pages) @done(22-10-26 11:02)
+✔ @done(22-10-26 11:02)
+
+
+Team Review:
+  Recommendation letter:
+    ✔ Create a hidden input from the HTML quil editor in order to post inside the form @done(22-10-25 12:39)
+    ✔ an erthei me proepilegmeno ton editor sto radio button na emfanizei ton editor @done(22-10-25 13:04)
+  General:
+    ✔ header: add email address or name and also a link to my account (next to logout) @done(22-10-21 14:24)
+    ✔ replace everywhere the success hover state from create-scholarship.html input portfolio @done(22-10-21 14:24)
+    ✔ edit-form: @done(22-10-18 16:35)
+    ✔ cost summary na upologizei akoma k ean exei valei o xristis mono ena pedio @done(22-10-18 16:18)
+    ✔ create side menu with anchor links for edit-form.html @done(22-10-19 10:40)
+    ✔ calculate summary cost on load @done(22-10-19 14:41)
+    ✔ autoscroll to first error @done(22-10-20 11:11)
+    ✔ αυτοματο υπολογισμο ηλικιας στο edit-form @done(22-10-24 17:30)
+  Applicants table:
+    ✔ x on search h na to stylaroume kai na to ftiaksoume h na to afersoume @done(22-10-20 13:57)
+    ✔ batch claim mode with save and exit mode buttons @done(22-10-21 11:44)
+     ✔ fix buggy search @done(22-10-25 17:24)
+  Applicants form:
+    ✔ fix sizes on helper nav @done(23-02-09 11:14)
+    ✔ withdrawn form status (box on top with withdraw reason) with reinstate @done(23-02-09 11:14)
+    ✔ anchor menu fix layout @done(22-10-21 11:44)
+    ✔ actions should be on the top of the page (only on view mode) @done(22-10-21 11:44)
+    ✔ responsive helper nav @done(22-10-19 15:31) (best way to show on mobile imo)
+    ✔ request correction modal submit tou zoupithike i psixi @done(22-10-19 15:30)
+    ✔ withdraw correction modal submit tou zoupithike i psixi @done(22-10-19 15:30)
+    ✔ add claim btn @done(22-10-19 15:38)
+    ✔ create action bar with buttons and also move "change revision" to the action bar @done(22-10-21 11:44)
+
+
+
+
+Tasks:
+  ✔ bug: an yparxei int tel phone mesa sto toggler den doulevei kala to update margin @done(23-02-09 11:15)
+  ✔ bug: otan kaneis back kai upirxe toast notification ksanavgainei @done(23-02-09 11:15)
+  ✔ upefthini dilwsi section @waiting for DPO @done(23-02-09 11:15)
+  ✔ revision dropdown: add borders @done(22-10-17 13:20)
+  ✔ add pedio "klitiki" @matziaris @done(22-10-17 13:47)
+  ✔ textarea character counter with limit @low @done(22-10-17 15:50)
+  ✔ sinoliko kostos calculate sum @medium @done(22-10-17 16:31)
+  ✔ create a seperate js module encapsulating all the functionality of the recommendation letter @done(22-10-25 13:16)
+  ✔ field of studies datasource must come from CRM @backend @done(22-10-26 11:05)
+  ✔ associate ability to resend email for recommendation letter @done(23-02-09 11:15)
+  ✔ scholarship-info: tha itan kalitero na exoume kateftheian to edit form screen san to create scholarship. TBD @done(23-02-09 11:15)
+  ✔ collapsing margins? on edit-form (some element has smaller margin) @low @deferred @done(23-02-09 11:15)
+  ✔ στο πεδιο στρατολογιας, εαν ειναι τωρα στρατευμνεος θελουν να ανοιγει πεδιο μεχρι ποτε και εαν εχει αναβολη το ιδιο. @done(22-10-18 16:18)
+✔ @done(22-10-18 16:18)
+
+
+
+DONE:
+  ✔ try out tinymce or ckeditor or quill as rich text editor @done(22-10-17 11:41)
+  ✔ dropdown mouse pointer over carret @done(22-10-17 11:30)
+  ✔ Create toast library for notification @done(22-10-11 11:43)
+  ✔ glwsses dropdown data sources (we added the allow create option) @done(22-10-17 11:25)
+  ✔ Πίνακας με global πανεπιστήμια??? done via Backend - https://github.com/Hipo/university-domains-list-api @done(22-10-17 11:23)
+  ✔ recommendation letter initial state, with upper limits when disabled rl have completed status @done(22-10-05 17:35)
+  ✔ repeater field initital state @done(22-10-05 16:56)
+  ✔ dropdown with data attribute to enable create: true @done(22-10-05 17:07)
+  ✔ tilefona missing internationalization input (prosopika stoixeia stathero k kinito) @done(22-10-05 17:21)
+  ✔ repeater field me "Άλλα μέλη της οικογένειάς σας υποτροφία από το Ίδρυμα Ωνάση;" onoma / eponimo @done(22-10-07 11:59)
+  ✔ Πίνακας πραγματοποιηθείσων σπουδών: perimenoume ta dropdown options gia to epipedo (kai sto se ekseliksi spoudes, kai sto epidiokomenes spoudes) @done(22-10-11 11:43)
+  ✔ Πίνακας πραγματοποιηθείσων σπουδών: na spasoume to panepistimio kai to tmima (kai sto se ekseliksi spoudes, kai sto epidiokomenes spoudes) @done(22-10-07 12:03)
+  ✔ Πίνακας πραγματοποιηθείσων σπουδών: panepistimio dropdown (kai sto se ekseliksi spoudes, kai sto epidiokomenes spoudes) @done(22-10-07 12:06)
+  ✔ sistatikes epistoles panepistimio dropdown me ti prosthiki neou @done(22-10-07 12:06)
+  ✔ sistatikes epistoles titlos @done(22-10-07 12:11)
+  ✔ sistatikes epistoles checkbox "exw epikoinwnisei klp" @done(22-10-07 12:14)
+  ✔ sistatikes epistoles work: idia pedia ektos apo to panepistimio p tha ginei etairia @done(22-10-07 12:34)
+  ✔ date / datetime theming closer to onassis theme @low @done(22-10-07 13:05)
+  ✔ Διδακτορικές σπουδές: new repeater fields me diatrives @done(22-10-07 12:52)
+  ✔ init libraries inside repeater field (repeaterField.js) @done(22-09-21 14:37)
+  ✔ datetime replace native with a lib (TBD) @done(22-09-16 16:34)
+  ✔ na kanoume to filo antra / gineka me radio button @done(22-09-28 15:59)
+  ✔ create repeater field for recommendation letter (onoma epwnymo email panepisthmio) @done(22-09-22 18:07)
+  ✔ dhmiourgia js gia show/hide relevant fields analoga me tis apanthseis @done(22-09-28 15:59)
+  ✔ create multiple rows with fields if answer is more than one (e.g. γλώσσες) @done(22-09-21 14:39)
+  ✔ rework radiobuttons (see open call) @done(22-09-21 14:39)
+  ✔ design: section subtitle (px. Αιτιολογία επιλογής επιδιωκόμενου προγράμματος σπουδών:) @done(22-09-21 14:40)
+  ✔ create multiple rows with fields if answer is more than one (e.g. γλώσσες) @done(22-09-21 15:15)
+  ✔ rework radiobuttons (see open call) + alithoro kiklaki @done(22-09-21 15:15)
+  ✔ design: section subtitle (px. Αιτιολογία επιλογής επιδιωκόμενου προγράμματος σπουδών:) @done(22-09-21 15:15)
+  ✔ rework add buttons (remove plus icon and maybe make it smaller?) @done(22-09-21 15:15)
+  ✔ Create hover for add scholarship @done(22-09-02 17:58)
+  ✔ Add more cards and variations with a flex container @done(22-09-08 11:42)
+  ✔ single variation @done(22-09-08 11:42)
+  ✔ with image @done(22-09-02 17:59)
+  ✔ Create alerts @done(22-09-14 14:58)
+  ✔ Do the responsive layout for dashboard (header, footer, dashboard layout) @done(22-09-08 13:00)
+  ✔ Think of some extreme content cases (defensive CSS) @done(22-09-08 15:19)
+  ✔ Create Add scholarship form page @done(22-09-12 16:51)
+  ✔ Fix dropzone functionality @done(22-09-12 16:56)
+  ✔ Create Scholarship Info page @done(22-09-12 16:52)
+  ✔ Create Edit scholarship form page @done(22-09-12 16:53)
+  ✔ Create Applicants page @done(22-09-12 16:53)
+  ✔ Check table responsiveness @started(22-09-12 16:53) @done(22-09-13 10:57) @lasted(18h4m15s)
+  ✔ Make table rows clickable @done(22-09-12 16:56)
+  ✔ Create Helper Navbars @done(22-09-12 16:54)
+  ✔ Create Applicant Metadata Page @done(22-09-12 16:54)
+  ✔ Create Applicant Form Page @done(22-09-12 16:54)
+  ✔ Create Global Modals (request/withdraw corrections) @done(22-09-12 16:55)
+  ✔ Create Breadcrumbs @done(22-09-12 16:55)
+  ✔ Create Comments Section @done(22-09-14 13:58)
+  ✔ Create Eligibility Check Section @done(22-09-14 13:57)
+  ✔ Create History for Form Edits @done(22-09-14 15:09)
+  ✔ Create repeater field @done(22-09-16 18:24)
+  ✔ Submission button focus state (btn--primary) @done(22-10-14 15:23)
+  ✔ scholarship tag remove fixed width @done(22-10-14 16:01)
+  ✔ button danger same as others @done(22-10-14 15:32)
+  ✔ add cursor pointer to revisions table @done(22-10-14 16:05)
+  ✔ make revisions table small and align right @done(22-10-14 16:05)

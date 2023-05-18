@@ -1,0 +1,41 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+  gap: 2.4rem;
+
+  &__empty-state {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+
+  &__empty-title {
+    @include font-size-16;
+    font-weight: 400;
+  }
+
+  &__empty-subtitle {
+    @include font-size-14;
+    font-weight: 400;
+    color: var(--slate-gray);
+    margin-top: 0.5rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-title {
+    @include font-size-18;
+    font-weight: 400;
+  }
+
+  &__items-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+  }
+}

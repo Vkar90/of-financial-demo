@@ -1,0 +1,96 @@
+.associatePanel {
+  display: flex;
+  height: 80vh;
+  padding: 24px;
+  gap: 24px;
+
+  &__item {
+    flex: 1;
+    padding: 24px;
+    transition: $trans;
+    border-radius: 12px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    &--open-calls {
+      background-color: #f9f8f4;
+      border: 1px solid #f9f8f4;
+    }
+    &--evaluations {
+      background-color: #f4f6f9;
+      border: 1px solid #f4f6f9;
+    }
+    &--submissions {
+      background-color: #f6f4f5;
+      border: 1px solid #f6f4f5;
+    }
+  }
+
+  &__item-title-container {
+    display: flex;
+    margin-bottom: 12px;
+
+    svg {
+      transform: translateY(5px);
+      opacity: 0;
+      transition: $trans;
+      margin-left: auto;
+    }
+  }
+
+  &__item-title {
+    @include font-size-30;
+  }
+
+  &__item-description {
+    @include font-size-14;
+    color: var(--slate-gray);
+    margin-bottom: 24px;
+  }
+
+  &__item-info-box {
+    transition: $trans;
+    margin-top: auto;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #0c0c0c;
+    color: white;
+    display: flex;
+    gap: 24px;
+
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  &__item-info-box-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-info-box-item-top {
+    @include font-size-30;
+    margin-bottom: 8px;
+  }
+  &__item-info-box-item-bottom {
+    @include font-size-14;
+    opacity: 0.5;
+  }
+
+  // hover state
+  &__item:hover {
+    border: 1px solid #0c0c0c;
+  }
+  &__item:hover &__item-title-container {
+    svg {
+      transform: none;
+      opacity: 1;
+    }
+  }
+
+  &__item:hover &__item-info-box {
+    opacity: 1;
+    transform: none;
+  }
+}

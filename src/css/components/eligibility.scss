@@ -1,0 +1,17 @@
+.eligibility {
+  // overflow: hidden;
+  &__title {
+    @include font-size-16;
+    font-weight: 500;
+    padding: 2.4rem;
+  }
+
+  &__form {
+    padding: 2rem;
+  }
+}
+
+#save-button {
+  margin-left: 2.4rem;
+  width: 10rem;
+}

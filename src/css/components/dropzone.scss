@@ -1,0 +1,147 @@
+.dropzone {
+  width: 11rem;
+  height: 12rem;
+  background: var(--ice-white);
+  border: 2px dashed var(--light-blue);
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  padding: 1.6rem;
+  position: relative;
+
+  // This is the element where the lib hooks to
+  &__main-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: red;
+    cursor: pointer;
+    opacity: 0;
+    &.hidden {
+      display: none;
+    }
+  }
+  // DEFAULT
+  &__default-state {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__default-state-copy {
+    margin-top: auto;
+    @include font-size-10;
+    text-align: center;
+    color: var(--slate-gray);
+    pointer-events: none;
+  }
+
+  // PROGRESS - UPLOADING
+  &__progress-state {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-evenly;
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__progress-state-copy {
+    @include font-size-10;
+  }
+
+  &__progress-state-percentage {
+    @include font-size-14;
+    color: var(--slate-gray);
+  }
+
+  // SUCCESS
+  &__success-state {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 4px;
+
+    svg {
+      align-self: center;
+    }
+    &.hidden {
+      display: none;
+    }
+
+    .disabled & {
+      pointer-events: all;
+    }
+
+    .js-dropzone-download:hover {
+      .line {
+        // stroke: var(--light-blue);
+      }
+      .circle {
+        fill: var(--ice-white);
+      }
+    }
+
+    .js-dropzone-delete:hover {
+      .line {
+        stroke: var(--error-red);
+      }
+      .circle {
+        fill: #feecee;
+      }
+    }
+  }
+
+  // SUCCESS HOVER
+  &__success-hover-state {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 7;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__filename {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+    margin-top: auto;
+    @include font-size-10;
+    text-align: center;
+  }
+}
+
+.js-dropzone-delete,
+.js-dropzone-download {
+  cursor: pointer;
+}

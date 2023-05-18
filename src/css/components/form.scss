@@ -1,0 +1,576 @@
+.form {
+  margin-top: 5rem;
+  display: flex;
+  align-self: center;
+
+  &__inner {
+    max-width: 60rem;
+    width: 100%;
+  }
+
+  @include when-less('sm') {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info-box {
+    background: #fafafa;
+    border-radius: 4px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    max-width: 60rem;
+    width: 100%;
+  }
+
+  &__info-box svg {
+    margin-right: 1.6rem;
+  }
+
+  &__info-box-copy {
+    @include font-size-14;
+    color: var(--slate-gray);
+  }
+
+  &__section {
+    background-color: var(--light-gray);
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.6rem;
+    border-radius: 4px;
+    margin-bottom: 2.4rem;
+
+    &--transparent {
+      background-color: transparent;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    @include when-less('sm') {
+      width: 100%;
+    }
+  }
+
+  &__subsection {
+    padding-bottom: 2rem;
+  }
+
+  &__section-title {
+    color: var(--dark);
+    @include font-size-18;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  &__section-subtitle {
+    color: var(--dark);
+    @include font-size-16;
+    font-weight: 500;
+    margin-bottom: 3rem;
+  }
+
+  &__element {
+    margin-bottom: 2rem;
+
+    & input:read-only {
+      color: var(--dark);
+    }
+
+    &--has-error {
+
+      input,
+      textarea {
+        border-color: var(--error-red);
+        color: var(--error-red);
+      }
+    }
+
+    &.disabled {
+      pointer-events: none !important;
+      cursor: default !important;
+    }
+    
+    & input:disabled {
+      background-color: var(--light-gray);
+    }
+  }
+
+  &__element-label {
+    @include font-size-14;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &__element-subtitle {
+    margin-bottom: 2rem;
+  }
+
+  &__element-description {
+    @include font-size-12;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+    color: #788591;
+  }
+
+  &__element-error {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  &__element-error-text {
+    @include font-size-12;
+    font-weight: 500;
+    color: var(--error-red);
+  }
+
+  &__element-input {
+    @include remove-input-styles;
+    @include font-size-14;
+    width: 100%;
+    background: var(--ice-white);
+    border-radius: 4px;
+    padding: 1rem;
+    border: 1px solid transparent;
+    transition: border $trans-time3 $trans-easing;
+    resize: none;
+
+    &.comment-section {
+      min-height: 20rem;
+      margin: 0 2.4rem 2rem 2.4rem;
+      width: calc(100% - 4.8rem);
+    }
+
+    &:focus {
+      border: 1px solid #0e40cf;
+    }
+
+    &::placeholder {
+      color: var(--slate-gray);
+      font-weight: 400;
+    }
+  }
+
+  // file input
+  &__element-file-container {
+    display: flex;
+  }
+
+  &__element-file-info {
+    margin-right: 20px;
+    max-width: 30rem;
+  }
+
+  &__element-file-input-container {
+    margin-left: auto;
+  }
+
+  &__element-checkbox-container {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    @include font-size-12;
+    font-weight: 500;
+    user-select: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__element-checkbox-label {
+    display: block;
+    padding-top: 2px;
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+  }
+
+  &__element-checkbox {
+    /* Hide the browser's default checkbox */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  &__element-checkbox-checkmark {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid var(--primary);
+    border-radius: 4.4px;
+    background: var(--ice-white);
+  }
+
+  &__element-checkbox-checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      opacity: 0;
+      transition: $trans;
+    }
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  &__element-checkbox-container &__element-checkbox:checked~&__element-checkbox-checkmark {
+    svg {
+      opacity: 1;
+    }
+  }
+
+  // disabled
+  &__element-checkbox-container &__element-checkbox:disabled~&__element-checkbox-checkmark {
+    border: 1px solid var(--slate-gray);
+
+    svg path {
+      stroke: var(--slate-gray);
+    }
+  }
+
+  // Radio buttons
+
+  &__element-radio-container {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding-left: 3rem;
+    @include font-size-14;
+    font-weight: 500;
+    user-select: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* Hide the browser's default radio button */
+  &__element-radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  &__element-radio-checkmark {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 4.4px;
+    border: 1px solid var(--primary);
+    background: var(--ice-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      transition: $trans;
+      opacity: 0;
+    }
+  }
+
+  /* When the radio button is checked, add a blue background */
+  &__element-radio-container input:checked~&__element-radio-checkmark::after {
+    opacity: 1;
+  }
+
+  // disabled
+  &__element-radio-container input:disabled~&__element-radio-checkmark::after {
+    background-color: var(--slate-gray);
+  }
+
+  &__element-radio-container input:disabled~&__element-radio-checkmark {
+    border: 1px solid var(--slate-gray);
+  }
+}
+
+// for tom select (dropdown)
+.form__element-dp-container {
+  position: relative;
+}
+
+.form__element-dp-arrow {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.tom-select {
+  padding: 0;
+
+  .ts-control {
+    background-color: var(--ice-white);
+    border: 0;
+    width: 100%;
+    border-radius: 4px;
+    padding: 1rem;
+    color: black;
+    @include font-size-14;
+  }
+
+  .ts-control,
+  .ts-wrapper.single.input-active .ts-control {
+    background-color: var(--ice-white) !important;
+    cursor: text;
+    width: 100%;
+    min-width: 15em;
+  }
+
+  .ts-dropdown {
+    border: none;
+    background-color: var(--ice-white);
+    margin: 0.25rem 0 0;
+    box-shadow: none;
+    border-radius: 0 0 4px 4px;
+    color: black;
+    @include font-size-14;
+    border: 1px solid #d9d9d9;
+  }
+
+  .ts-dropdown .option {
+    padding: 1rem;
+  }
+
+  .ts-dropdown .active,
+  .ts-dropdown .create:hover,
+  .ts-dropdown .option:hover {
+    background-color: var(--light-blue);
+    color: black;
+  }
+}
+
+// for phone input
+.iti {
+  display: flex;
+
+  .disabled & {
+    color: var(--slate-gray);
+
+    .iti__arrow {
+      border-top: 4px solid var(--light-gray);
+    }
+  }
+
+  @include font-size-14;
+
+  input {
+    padding-left: 1rem !important;
+  }
+}
+
+.iti__flag-container {
+  padding: 0;
+}
+
+.iti__flag {
+  background-image: url('../../images/flags.png');
+}
+
+.iti__selected-flag {
+  background-color: var(--ice-white) !important;
+  border-radius: 4px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url('../../images/flags@2x.png');
+  }
+}
+
+.iti__country {
+  padding: 1rem;
+}
+
+.iti__country-list {
+  border: none;
+  background-color: var(--ice-white);
+  margin: 0.25rem 0 0;
+  box-shadow: none;
+  border-radius: 0 0 4px 4px;
+  color: black;
+  @include font-size-14;
+
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag,
+.iti__country.iti__highlight {
+  background-color: var(--light-blue);
+}
+
+@include when-less('sm') {
+  .phone-input {
+    max-width: 100%;
+  }
+}
+
+.iti__dial-code {
+  color: black;
+}
+
+//repeater
+
+.repeatable-field {
+  padding: 0;
+  border: none;
+
+  &__disabled-items {
+    margin-bottom: 3rem;
+  }
+
+  &__item {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    @include when-less('sm') {
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+    }
+
+    &--disabled {
+      border: 1px solid #d9d9d9;
+      flex-direction: column;
+    }
+  }
+
+  &__state {
+    background-color: var(--pale-gray);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__state-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  &__state-withdraw {
+    margin-top: 1.5rem;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--primary);
+  }
+
+  &__left-side {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.2rem;
+
+    // .form__element-label {
+    //   margin-top: 1.5rem;
+    // }
+  }
+
+  &__right-side {
+    display: flex;
+    flex-direction: column;
+    // flex: 1;
+    border-left: 1px solid #d9d9d9;
+    cursor: pointer;
+    width: 4rem;
+    flex-shrink: 0;
+
+    @include when-less('sm') {
+      border-left: unset;
+      border-bottom: 1px solid #d9d9d9;
+      width: unset;
+      height: 4rem;
+    }
+  }
+
+  &__remove-btn {
+    display: flex;
+    margin: 3rem auto;
+    transition: $trans;
+    position: sticky;
+    top: 3rem;
+    transform: scale(1.2);
+
+    svg path {
+      fill: black;
+    }
+
+    @include when-less('sm') {
+      margin: auto;
+    }
+  }
+
+  &__right-side:hover &__remove-btn {
+    transition: $trans;
+    transform: scale(1.4);
+  }
+
+  &.disabled &__right-side,
+  &.disabled &__remove-btn,
+  &.disabled &__add-btn {
+    display: none;
+  }
+}
+
+// Request correction container
+.corrections-container .form__section {
+  border: 1px solid var(--slate-gray);
+}
+
+// Quil editor
+.quill-editor {
+  height: 37.5rem !important;
+}
+
+// my account page
+.account-info {
+  margin: 0 auto;
+
+  .form__inner {
+    min-width: 60rem;
+
+    @include when-less('md') {
+      min-width: 80vw;
+    }
+  }
+}
+
+// popover
+.popover-body {
+  @include font-size-16;
+}
+
+#evaluation-form {
+  display: block;
+}

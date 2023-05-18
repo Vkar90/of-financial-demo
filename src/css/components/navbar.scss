@@ -1,0 +1,23 @@
+.navbar {
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: var(--pale-gray);
+  // width: 1280px;
+
+  &__link {
+    margin-right: 2.4rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .active {
+    text-decoration: underline;
+  }
+}

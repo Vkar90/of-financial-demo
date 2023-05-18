@@ -1,0 +1,100 @@
+// 2.4 rem to be spacing var?
+
+.header {
+  display: flex;
+  padding: 2.4rem;
+  align-items: center;
+  &__separator {
+    width: 1px;
+    height: 11px;
+    background-color: var(--dark);
+    margin: 0 2rem;
+    border-radius: 50%;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    padding-right: 1.5rem;
+  }
+  &__home-icon {
+    transition: $trans;
+    fill: var(--light);
+    path.small-line {
+      stroke: black;
+      transition: $trans;
+    }
+  }
+
+  &__home-icon:hover {
+    fill: var(--dark);
+    path.small-line {
+      stroke: white;
+    }
+  }
+
+  &__page-title {
+    @include font-size-18;
+  }
+
+  &__right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.my-account {
+  width: 343px;
+  height: 139px;
+  gap: 1px;
+
+  &__top-account {
+    padding: 1.8rem;
+    box-shadow: 0px 1px 0px #eaebec;
+  }
+
+  &__bottom-account {
+    padding: 1rem;
+  }
+
+  &__email {
+    @include font-size-14;
+    font-weight: 500;
+  }
+
+  &__link {
+    @include font-size-14;
+    text-decoration: underline;
+    padding: 0;
+
+    &:hover {
+      background-color: transparent;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+  }
+
+  &__log-out-copy {
+    @include font-size-14;
+    color: var(--slate-gray) !important;
+
+    &:hover {
+      background-color: transparent;
+      font-weight: 500;
+    }
+  }
+}
+
+.dropdown-menu.show {
+  background: #fafafa;
+  box-shadow: 0px 1px 0px #eaebec;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+// fix header overflow
+#dropdownMenuButton2::before {
+  content: none !important;
+}

@@ -1,0 +1,206 @@
+## Recommendation letter
+
+tha exoume 2 sections. ena gia akadimaika kai ena gia ergasias.
+sto kathe item tha exoume
+
+- fname
+- lname
+- email
+- idrima / orgasnimos
+- checkbox oti exei lavei consent gia apostoli email
+
+ta emails fevgoun kai sto save as draft kai sto submit.
+otan exei figei ena email to item tha exei status p tha fenete sto submitter. ta statuses einai:
+
+- pending
+- aporifthike
+- elikse
+- exei dwthei
+
+## Formes
+
+tha exoume sigoura 2 simeia pou kanoun show/hide alla pedia h ena section apo pedia.
+to ena einai me to an eisai arren kai ti stratologia
+kai to allo einai an eisai pantremenos me ta stoixia sizigou.
+na doume ligo se UI pos tha to ftiaksoume. TODO
+
+# Notes for form fields
+
+ithagenia /ethnikotita data source
+epagelma goneon - mono an einai en zoi?
+na spasoume ola ta onomateponima se onoma kai eponimo (ksexorista pedia)
+ΣΤΟΙΧΕΙΑ ΤΡΕΧΟΥΣΑΣ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΑΠΑΣΧΟΛΗΣΗΣ: (look miro) with 2 level hidden radio buttons
+technical talk about validation of toggling fields.
+ΣΤΟΙΧΕΙΑ ΠΟΙΝΙΚΟΥ ΜΗΤΡΩΟΥ: file upload
+ΔΙΕΥΘΥΝΣΗ ΜΟΝΙΜΗΣ ΟΙΚΟΓΕΝΕΙΑΚΗΣ ΚΑΤΟΙΚΙΑΣ: (look miro)
+ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ: xreiazomaste pollapla pedia gia afta opos sto miro?
+ΚΩΔΙΚΟΣ ΠΑΛΑΙΟΤΕΡΗΣ ΥΠΟΤΡΟΦΙΑΣ: (look miro)
+ΕΠΙΠΕΔΟ (π.χ. ανώτερη/ανώτατη/μεταπτυχιακή): dropdown options?
+ΕΤΟΣ ΑΠΟΦΟΙΤΗΣΗΣ: gia tis en ekseliksi spoudes ti tha exei edw?
+ΠΑΝΕΠΙΣΤΗΜΙΟ/ΤΜΗΜΑ: TI KANOUME EDW?
+ΓΛΩΣΣΑ: dropdown fixed mesa sto html
+Επίπεδο σπουδών: dropdown me to epipedo
+Δημοσιεύσεις: repeater field me input text
+ΓΝΩΣΤΙΚΟ ΠΕΔΙΟ spoudon: dropdown with ?
+ΕΠΙΔΙΩΚΟΜΕΝΟ ΕΠΙΠΕΔΟ ΣΠΟΥΔΩΝ: repeater field. na ta valoume se repeater fields? kai an nai posa tha mpoun?
+textareas: counter with limit?
+Κόστος σπουδών και διαβίωσης: sinolo to theme?
+eidos epixorigisis: to etisio poso mazi me to titlo tou san optional field
+ΠΡΟΘΕΣΗ ΥΠΟΒΟΛΗΣ ΑΙΤΗΣΗΣ ΥΠΟΤΡΟΦΙΑΣ ΣΕ ΆΛΛΟ ΟΡΓΑΝΙΣΜΟ: repeater or 2 fixed fields?
+oroi xrisis: mporoun na pernane me oxi stous orous xrisis?
+oroi xrisis: mporoun na pernane me uncheck sta 2 checkbox?
+oroi xrisis: mporoun ta 2 pedia me to poiniko na ta fame?
+
+---
+
+## Themata me ti forma sto optimy
+
+Data source gia ta dropdown.
+
+ΠΡΟΣΩΠΙΚΑ ΣΤΟΙΧΕΙΑ ΥΠΟΨΗΦΙΟΥ
+
+ΟΙΚΟΓΕΝΕΙΑΚΑ & ΚΟΙΝΩΝΙΚΟ-ΟΙΚΟΝΟΜΙΚΑ ΣΤΟΙΧΕΙΑ ΥΠΟΨΗΦΙΟΥ
+
+- pateras / mitera en zwi kai krifa pedia. ti tha kanoume telika? pia pedio tha einai sto en zoi kai pia fixed?
+- oikogeniaki katastasi. epireazete apo to agamos klp? ti kanoume?
+- allo melos oikogenies, diplo checkbox? ti ginete? na to kanoume repeater field me idiotita sizigos / aderfos?
+
+ΑΚΑΔΗΜΑΪΚΟ ΠΡΟΦΙΛ ΥΠΟΨΗΦΙΟΥ
+
+- Πίνακας πραγματοποιηθείσων σπουδών - epipedo? to kratame?
+- panepistimio datasource with allo option?
+- pane kai tmima na ta xwrisoume?
+- titlos spoudon dropdown datasource me allo option?
+- glwses: data source me allo option? na valoume oles tis glwsses allo option
+
+ΕΠΙΔΙΩΚΟΜΕΝΕΣ ΣΠΟΥΔΕΣ ΥΠΟΨΗΦΙΟΥ
+
+- na ftiaksoume ena radio button gia to diepistimoniko pedio kai na anoigi to allo dropdown
+- na ftiaksoume ena radio button gia to ΔΙΑΚΡΑΤΙΚΟ pedio kai na anoigi to allo dropdown
+
+ΥΠΕΥΘΥΝΗ ΔΗΛΩΣΗ
+
+- ti paizei me ta checkboxes kai allazoun kati sto actual submission?
+
+===================================
+For onassis decision:
+
+- filo me stratefsi?
+  TO KANOYME OPWS EINAI STO OPTIMY (+ALLO)
+- ethnikotita kai ithagenia allow create new option for user?
+  OXI
+- Έχετε υποβάλει ή πρόκειται να υποβάλετε φέτος αίτηση για υποτροφία σε άλλο Ίδρυμα ή Οργανισμό παράλληλα με την παρούσα αίτηση;: tairiazei sta prosopika stoixeia? tha prepei na xwrisoume ton organismo me to pote tha gnostopoihthoun ta apotelesmata?
+  NA MEINEI STO SHMEIO POY EINAI
+  NA SPASEI SE 2 PEDIA + NA GINEI REPEATER
+- uparxei ena xwra pou den vgazei noima sto telos ton prosopikon stoixeion.
+  EINAI LATHOS TO AFAIROYME
+- stoixeia mpampa, mama ean einai en zwi (mono sto OKK)
+  TA STOIXEIA NA EMFANIZONTAI MONIMA (OXI KINHTO KAI STATHERO EINAI MONO GIA EIDIKA PROGRAMMATA)
+- Αδέλφια ή Τέκνα (προστατευόμενα μέλη). sxetizete me to agamos / eggamos? xreiazete explanation text?
+  IDIOTHTA NA GINEI SXESH + RADIO FEYGEI TO PROSTATEYOMENA MELH
+  IDIOTHTA 2 NA MEINEI OPEN TEXT ME KALYTERO EXPLANATION
+- Κατηγορία εισοδήματος: options?
+  MENOYN OPWS EINAI
+- Βεβαίωση σειράς κατάταξης na to vgaloume ektos mono tou kai na einai mono gia ti teleftea?
+  NA EINAI PANTOY + na mpei pedio Σειρά Κατάταξης σε ποσοστό
+- Έχετε σπουδές σε εξέλιξη na paei apo panw?
+  ΟΧΙ
+- CEFR levels?
+  NA PROSTETHEI EXPLANATORY DESCRIPTION
+- sistatikes epistoles logic gia work / academic. poses k poses?
+  (MIN 2 AKADHMAIKES - MAX 3 + OPTIONAL EPAGGELMATIKH MAX 1)
+- sistatikes epistoles: ti pedia tha valoume? to onomateponimo tou ipopsifiou tha einai sta ellinika otan paei se ksenoun kathigites. to interface pou vazei sistatiki epistoli prepei na einai sta agglika. minima inivitation?
+- ΕΠΙΔΙΩΚΟΜΕΝΕΣ ΣΠΟΥΔΕΣ ΥΠΟΨΗΦΙΟΥ: epoptis kathigitis?
+- Συνολική διάρκεια φοίτησης για την απόκτηση του τίτλου σπουδών
+
+- Υπεύθυνη Δήλωση τελικής επιλογής προγράμματος kai Αντίγραφο visa mipos prepepi na einai se allo simeio?
+- Υπεύθυνη Δήλωση τελικής επιλογής προγράμματος to zitame se deftero xrono?
+- Υπεύθυνη Δήλωση pos tha ta deiksoume visually?
+  TBD
+
+
+
+
+
+
+
+
+
+FORMS
+==============================================================================
+- Ellinika / agglika stous titlous? A. opou uparxoun tha mpainoun ellinika / agglika
+- Stratologiki katastasi allo? uparxei telika? A. Kratame Aren / Thili
+- Prosfonisi? telika ti kanoume? o h to h opos eixe pei i stella na valei free text? A. afinoume h / o / to
+
+JB FORM
+=============================================================================
+- Na prostethei to ilikia sto backend @nikos
+- Μόνιμα επιλεγμένο/κλειδωμένο: Προπτυχιακές Σπουδές - A. To aferoume kai tha mpei sto CRM integration logic
+
+
+JM FORM
+=============================================================================
+
+
+F FORM
+=============================================================================
+- Leei poli genisis. Telika einai poli h topos opos leei stis alles formes? A. Poli genisis
+- Έτη Προϋπηρεσίας thelei decimal me dekadiko k coma. na valoume text h aplo number me teleia? A. to kanoume text me prosthiki description gia to format
+- Σειρά κατάταξης σε ποσοστό επι τις εκατό. den exoume pedio epi tis % tha einai aplo text. A. to kanoume text me prosthiki description gia to format
+- Sistatikes epistoles akadimaikes kai epagelmatikes: ti simenei to na afairethei i dinatotita prosthikis? Α. Lathos.
+- @nikos Να τονιστεί η φράση: Ο καθηγητης εχει ολοκληρώσει την επισυναψη της συστατικης (όχι συσταστικής) επιστολης του.
+Η φράση: Έχουμε αποστείλει email στον καθηγητη και αναμένεται η επισυναψη της συσταστικης επιστολης του να γίνει: Έχει αποσταλεί email στον καθηγητή και αναμένεται η επισύναψη της συστατικής επιστολής του.
+- @nikos Να τονιστούν όλες οι λέξεις της φράσης: Ο παραλήπτης έχει ολοκληρώσει την επισύναψη της συστατικής επιστολής του.
+Η φράση: Έχουμε αποστείλει email στον παραλήπτη και αναμένεται η επισυναψη της συσταστικης επιστολης του να γίνει: Έχει αποσταλεί email στον παραλήπτη και αναμένεται η επισύναψη της συστατικής επιστολής του.
+- lookup for gnostiko pedio eksoterikou @nikos tha einai apo crm kai afto? A. tha einai sto CRM
+- gnostiko pedio 2: να τους εμφανίζονται τα γνωστικά πεδία Ελλάδας (See Sheet ΓΝΩΣΤΙΚΑ ΠΕΔΙΑ ΕΛΛΑΔΑΣ). mipos einai tupo kai theloume tou eksoterikou? Α. TODO
+- 2) Η φράση “Προτεινόμενος τίτλος διατριβής” να γίνει “Θέμα διδακτορικής διατριβής“, να μπει σημείωση “Συμπληρώστε το ακριβές ή κατά προσέγγιση θέμα” και να μένει σταθερό το πεδίο εκτός “Προσθήκης” γιατί το θέμα παραμένει ίδιο όσα Πανεπιστήμια και αν δηλώσει ο υποψήφιος
+3) Η ερευνητική πρόταση όπου θα επισυνάπτουν το αρχείο οι υποψήφιοι να μένει σταθερή εκτός “Προσθήκης” γιατί μία ερευνητική πρόταση αποστέλουν. Στη σημείωση της ερευνητικής πρότασης να γίνει η ακόλουθη διόρθωση: [...] με τα προβλεπόμενα στάδια ολοκλήρωσης των σπουδών και ενδεικτική βιβλιογραφία ή περιγραφή κατά προσέγγιση του προτεινόμενου θέματος διατριβής εάν δεν έχει ορισθεί ακόμη.
+Den mporei na valei pollapla themata diatrivon?
+
+A. Na to doume
+- Περιγραφή προγράμματος: ti einai k pos tha leitourgei A. To afinoume etsi xwris na fenete to min items
+- Links: tha valoume 6 links me titlo? A. tha valoume 6 diaforetika links
+
+
+G FORM
+=============================================================================
+
+
+J Proptixaki (Bachelor)
+J Master & PHD
+F Ellada & Eksoteriko Master & PHD (Geniko koino)
+G Metaptixiakou Ellados (Geniko koino)
+R Thesis publication
+R Post graduation research
+
+OCSC OKK (gia ta paidia ton ipalilon tou kardioxeirourgikou)
+One of the kind AntetokounBros
+
+
+
+
+
+status filter
+owners
+ass eligibility check
+dire eligibility check
+
+ta filtra tha doulevoun san logiko AND kai mesa doulevoun san OR
+
+
+
+You can only have 1 submission per scholarship.
+
+You can only apply to 1 scholarship call per season.
+- Exception: If your submission is on RThesis you can also apply to the RPostdoc
+- Exception: If your submission is on RPostdoc you can also apply to the RThesis
+
+
+
+======================================================
+
+
+Laptop
+Cards
+Sentry

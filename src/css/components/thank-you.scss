@@ -1,0 +1,32 @@
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 82vh;
+  text-align: center;
+
+  @include when-less('sm') {
+    width: 80vw;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__message {
+    color: var(--dark);
+    margin-bottom: 3rem;
+    @include font-size-50;
+  }
+
+  &__message-error {
+    color: var(--dark);
+    margin-bottom: 3rem;
+    @include font-size-50;
+  }
+}

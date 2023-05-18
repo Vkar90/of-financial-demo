@@ -1,0 +1,22 @@
+.flatpickr-innerContainer {
+  background-color: var(--ice-white);
+  border-radius: 4px;
+}
+
+.flatpickr-months {
+  background-color: var(--primary);
+  @include font-size-12;
+
+  svg {
+    fill: white;
+  }
+}
+
+.flatpickr-months .flatpickr-month {
+  color: white !important;
+}
+
+.flatpickr-current-month select.flatpickr-monthDropdown-months{
+  background-color: var(--primary) !important;
+  color: var(--ice-white) !important;
+}

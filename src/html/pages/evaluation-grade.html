@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <!-- partial:../partials/head.html -->
+  <!-- partial -->
+
+  <body>
+    <!-- main container -->
+    <div class="layout">
+      <!-- global header -->
+      <!-- partial:../partials/header.html -->
+      <!-- partial -->
+
+      <!-- breadcrumbs -->
+      <!-- partial:../partials/breadcrumbs.html -->
+      <!-- partial -->
+
+      <!-- main page -->  
+      <main class="layout__main">
+        <div class="layout__main-page-content">
+          <div class="evaluation-container">
+            <div class="evaluation-container__view-form">
+              <h3 class="evaluation-container__view-form__title">APPLICATION</h3>
+              <div class="form js-form">
+                <!-- partial:../partials/side-anchor-menu.html -->
+               <!-- partial -->
+                <div class="form__inner-form" id="evaluation-view">
+                  <!-- partial:../partials/form-sections/prosopika-stoixeia.html -->
+                  <!-- partial -->
+
+                  <!-- partial:../partials/form-sections/koinonika.html -->
+                  <!-- partial -->
+
+                  <!-- partial:../partials/form-sections/akadimaiki-ekseliksi.html -->
+                  <!-- partial -->
+
+                  <!-- partial:../partials/form-sections/sistatikes-epistoles.html -->
+                  <!-- partial -->
+
+                  <!-- partial:../partials/form-sections/epidiwkomenes-spoudes.html -->
+                  <!-- partial -->
+
+                  <!-- partial:../partials/form-sections/keimena-aitiologisi.html -->
+                  <!-- partial -->
+
+                  <!-- partial:../partials/form-sections/kostos-spoudon.html -->
+                  <!-- partial -->
+                </div>
+              </div>
+            </div>
+            <div class="evaluation-container__grades" id="grades">
+              <div class="evaluation-container__grades-title">
+                <h3>EVALUATION</h3>
+                <a href="#" class="evaluation-container__grades__faq-link">Οδηγίες αξιολόγησης</a>
+              </div>
+              <div class="evaluation-container__grades-inner">
+                <button class="btn btn--secondary" id="exclude-button"  data-bs-toggle="modal"
+              data-bs-target="#excludeFromEvaluationModal" type="button">Exclude from Evaluation</button>
+                <div class="evaluation-container__grades-associate-comments">
+                  <h4 class="evaluation-container__question-title">Associate Comments</h4>
+                  <p class="evaluation-container__question-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga iste rem est consequatur? Similique vero itaque numquam illum dolorum aliquid harum. Ullam, in. Doloribus suscipit quasi quisquam officia ullam nobis laudantium!</p>
+                </div>
+              <div class="evaluation-container__questions-container">
+                <div class="evaluation-container__question">
+                  <h5 class="evaluation-container__question-title">Score the candidate based on the submission data</h5>
+                  <p class="evaluation-container__question-subtitle">Grade the candidate from 1 to 50</p>
+                  <input type="number" class="evaluation-container__question-grading-box" min="1" max="50"></input>
+                </div>
+                <div class="evaluation-container__question">
+                  <h5 class="evaluation-container__question-title">Score the candidate based on the submission data</h5>
+                  <p class="evaluation-container__question-subtitle">Grade the candidate from 1 to 50</p>
+                  <input type="number" class="evaluation-container__question-grading-box" min="1" max="50"></input>
+                </div>
+              </div>
+              <div class="evaluation-container__questions-open-ended">
+                <div class="form__element evaluation-container__question-open-ended">
+                    <label for="exampleid" class="evaluation-container__question-title">Innovation</label>
+                    <label for="exampleid" class="evaluation-container__question-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nam vel, modi libero quam minus magnam cumque impedit eius quis voluptas in, odit cupiditate iusto. Quae error enim porro placeat inventore accusantium!</label>
+                    <textarea class="form__element-input evaluation-container__open-ended" placeholder="" id="floatingTextarea2" style="height: 200px"></textarea>
+                </div>
+                <div class="form__element evaluation-container__question-open-ended">
+                  <label for="exampleid" class="evaluation-container__question-title">Innovation</label>
+                  <label for="exampleid" class="evaluation-container__question-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nam vel, modi libero quam minus magnam cumque impedit eius quis voluptas in, odit cupiditate iusto. Quae error enim porro placeat inventore accusantium!</label>
+                  <textarea class="form__element-input evaluation-container__open-ended" placeholder="" id="floatingTextarea2" style="height: 200px"></textarea>
+                </div>
+                <div class="form__element evaluation-container__question-open-ended">
+                  <label for="exampleid" class="evaluation-container__question-title">Innovation</label>
+                  <label for="exampleid" class="evaluation-container__question-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nam vel, modi libero quam minus magnam cumque impedit eius quis voluptas in, odit cupiditate iusto. Quae error enim porro placeat inventore accusantium!</label>
+                  <textarea class="form__element-input evaluation-container__open-ended" placeholder="" id="floatingTextarea2" style="height: 200px"></textarea>
+                </div>
+              </div>
+              <div class="evaluation-container__comments">
+                <div class="form__element evaluation-container__question-open-ended">
+                    <label for="exampleid" class="evaluation-container__question-title">Σχόλια Υποψηφιότητας</label>
+                     <label for="exampleid" class="evaluation-container__question-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nam vel, modi libero quam minus magnam cumque impedit eius quis voluptas in, odit cupiditate iusto. Quae error enim porro placeat inventore accusantium!</label>
+                    <textarea class="form__element-input evaluation-container__open-ended" placeholder="" id="floatingTextarea2" style="height: 200px"></textarea>
+                </div>
+              </div>
+              <h3 class="evaluation-container__grades_total-grade-container">Total Grade: <span class="evaluation-container__grades_total-grade" ></span></h3>
+              <div class="btn-group evaluation-container__action-buttons">
+                <button class="btn btn--primary">Save Evaluation</button>
+              </div>
+            </div> 
+          </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- global footer -->
+      <!-- partial:../partials/footer.html -->
+      <!-- partial -->
+    </div>
+
+    <!-- FOOTER SCRIPTS -->
+    <!-- partial:../partials/footer-scripts.html -->
+    <!-- partial -->
+  </body>
+</html>

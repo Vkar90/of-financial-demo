@@ -1,0 +1,51 @@
+// for rem units
+html {
+  font-size: 10px;
+}
+
+// Declare the font sizes for the project here
+@mixin font-size-50 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+@mixin font-size-30 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+@mixin font-size-20 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@mixin font-size-18 {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+@mixin font-size-16 {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+@mixin font-size-14 {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@mixin font-size-12 {
+  font-size: 12px;
+  // we made the font size from 12 to 14 in ordre to icnrease accesibility (executive decision)
+  line-height: 1.5;
+}
+
+@mixin font-size-10 {
+  font-size: 10px;
+  line-height: 1.25;
+}
+
+@mixin font-size-8 {
+  font-size: 8px;
+  line-height: 1.25;
+}
